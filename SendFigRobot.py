@@ -25,7 +25,7 @@ def sendmsg(symbol, api_key, user_id):
 def LiquidityScore():
     global today
     file_date = f'{today.year}_{today.month}_{today.day}'
-    url = "https://api.coinmarketcap.com/data-api/v3/exchange/market-pairs/latest?slug=binance&category=spot&start=1&limit=2"
+    url = "https://api.coinmarketcap.com/data-api/v3/exchange/market-pairs/latest?slug=binance&category=spot&start=1&limit=5"
     current_time = datetime.now()
     response = requests.get(url)
 
